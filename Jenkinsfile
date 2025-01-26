@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Sanchitk06/pipelinetest.git'
+                git branch: 'main', url: 'https://github.com/Sanchitk06/pipelinetest.git'
             }
         }
         stage('Build') {
